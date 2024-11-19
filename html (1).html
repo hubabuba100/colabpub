@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        CoLab
+    </title>
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: #000000;
+            font-family: Roboto;
+            text-align: center;
+	    color: white;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CoLab</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="worker">Worker</option>
+                <option value="intern">Business owner</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                I believe that collective welfare is more important than individual success.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="recommed">True
+                  </input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" 
+                       name="recommed">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I believe that collective welfare is more important than individual success.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="recommed2">True
+                  </input>
+            </label>
+            <label for="recommed-4">
+                <input type="radio" id="recommed-4" 
+                       name="recommed2">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I prefer policies that prioritize people over systems and processes.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-5">
+                <input type="radio" id="recommed-5" 
+                       name="recommed3">True
+                  </input>
+            </label>
+            <label for="recommed-6">
+                <input type="radio" id="recommed-6" 
+                       name="recommed3">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                In decision-making, I trust data and analysis more than my intuition.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-7">
+                <input type="radio" id="recommed-7" 
+                       name="recommed4">True
+                  </input>
+            </label>
+            <label for="recommed-8">
+                <input type="radio" id="recommed-8" 
+                       name="recommed4">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                It’s more important for society to support individual freedom than to prioritize group well-being.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-9">
+                <input type="radio" id="recommed-9" 
+                       name="recommed5">True
+                  </input>
+            </label>
+            <label for="recommed-10">
+                <input type="radio" id="recommed-10" 
+                       name="recommed5">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I feel comfortable making decisions based on intuition rather than data.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-11">
+                <input type="radio" id="recommed-11" 
+                       name="recommed6">True
+                  </input>
+            </label>
+            <label for="recommed-12">
+                <input type="radio" id="recommed-12" 
+                       name="recommed6">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                A clear hierarchy with defined roles is essential for a successful organization.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-13">
+                <input type="radio" id="recommed-13" 
+                       name="recommed7">True
+                  </input>
+            </label>
+            <label for="recommed-14">
+                <input type="radio" id="recommed-14" 
+                       name="recommed7">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I believe that focusing on tasks and outcomes is more important than building relationships in a work environment.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-15">
+                <input type="radio" id="recommed-15" 
+                       name="recommed8">True
+                  </input>
+            </label>
+            <label for="recommed-16">
+                <input type="radio" id="recommed-16" 
+                       name="recommed8">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I prefer sticking to established processes rather than trying new, untested ideas.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-17">
+                <input type="radio" id="recommed-17" 
+                       name="recommed9">True
+                  </input>
+            </label>
+            <label for="recommed-18">
+                <input type="radio" id="recommed-18" 
+                       name="recommed9">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I think a flat organizational structure enables better teamwork and communication.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-19">
+                <input type="radio" id="recommed-19" 
+                       name="recommed10">True
+                  </input>
+            </label>
+            <label for="recommed-20">
+                <input type="radio" id="recommed-20" 
+                       name="recommed10">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                For long-term success, I believe innovation should take precedence over adherence to processes.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-21">
+                <input type="radio" id="recommed-21" 
+                       name="recommed11">True
+                  </input>
+            </label>
+            <label for="recommed-22">
+                <input type="radio" id="recommed-22" 
+                       name="recommed11">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I enjoy taking on responsibilities that allow me to support others.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-23">
+                <input type="radio" id="recommed-23" 
+                       name="recommed12">True
+                  </input>
+            </label>
+            <label for="recommed-24">
+                <input type="radio" id="recommed-24" 
+                       name="recommed12">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+               In high-pressure situations, I rely more on emotional instincts than on careful analysis.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-25">
+                <input type="radio" id="recommed-25" 
+                       name="recommed13">True
+                  </input>
+            </label>
+            <label for="recommed-26">
+                <input type="radio" id="recommed-26" 
+                       name="recommed13">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I am more comfortable working on my own projects than in a team setting.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-27">
+                <input type="radio" id="recommed-27" 
+                       name="recommed14">True
+                  </input>
+            </label>
+            <label for="recommed-28">
+                <input type="radio" id="recommed-28" 
+                       name="recommed14">False
+                  </input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                I make most decisions based on logic rather than emotions.
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-29">
+                <input type="radio" id="recommed-29" 
+                       name="recommed15">True
+                  </input>
+            </label>
+            <label for="recommed-30">
+                <input type="radio" id="recommed-30" 
+                       name="recommed15">False
+                  </input>
+            </label>
+        </div>
+
+
+
+        <!-- Multi-line Text Input Control -->
+        <button type="button" onclick="location.href='html (2).html'">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>

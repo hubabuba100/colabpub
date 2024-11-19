@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        CoLab
+    </title>
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: #000000;
+            font-family: Roboto;
+            text-align: center;
+	          color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Location in the SMLC cube</h1>
+
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "html (1).png"
+  } else {
+    pic = "html (2).png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="personalloc.png" width="250" height="250">
+
+<p>
+<button type="button" onclick="light(0)">Person</button>
+<button type="button" onclick="light(1)">Business</button>
+</p>
+
+</body>
+</html>
